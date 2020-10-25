@@ -22,6 +22,13 @@
       },
       "layer": [
         {
+          "selection": {
+            "capacity_highlight": {
+              "type": "multi",
+              "fields": ["Capacity"],
+              "bind": "legend"
+            }
+          }
           "mark": {"type": "circle"},
           "encoding": {
             "size": {
@@ -44,7 +51,8 @@
               "legend": {"format": ".1s"}
             },
             "opacity": {
-              "value": 0.6
+              "condition": {"selection": "capacity_highlight", "value": 0.6},
+              "value": 0.2
             },
             "tooltip": [
                 {"field": "Name", "type": "nominal"},
