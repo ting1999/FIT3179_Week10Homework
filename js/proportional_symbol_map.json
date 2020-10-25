@@ -31,21 +31,15 @@
                 "type": "threshold",
                 "domain": [10, 100, 500, 1000],
                 "range": [10, 50, 150, 200, 300]
-              },
-              "legend": {"format": ".1s"}
+              }
             },
             "color": {
               "field": "Capacity", 
               "type": "quantitative",
               "scale":{
+                "type": "threshold",
                 "domain": [10, 100, 500, 1000],
-                "range": [
-                  "#fee5d9", 
-                  "#fcae91", 
-                  "#fb6a4a", 
-                  "#de2d26", 
-                  "#a50f15"
-                ]
+                "scheme": "reds"
               },
               "legend": {"format": ".1s"}
             },
