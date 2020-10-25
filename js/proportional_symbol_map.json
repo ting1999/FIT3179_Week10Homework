@@ -34,11 +34,16 @@
               },
               "legend": {"format": ".1s"}
             },
-            "color": {"field": "Capacity", 
-                      "type": "quantitative",
-                      "scale":{
-                          "scheme":"reds"
-                      }
+            "color": {
+              "field": "Capacity", 
+              "type": "quantitative",
+              "scale":{
+                "scheme":"reds",
+                "type": "threshold",
+                "domain": [10, 100, 500, 1000],
+                "range": [10, 50, 150, 200, 300]
+              },
+              "legend": {"format": ".1s"}
             }
           }
         }
