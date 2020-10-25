@@ -6,8 +6,13 @@
   "data": {"url": "https://raw.githubusercontent.com/ting1999/FIT3179_Week10Homework/main/data/nuclear_power_plants.json"},
   "mark": "bar",
   "encoding": {
-    "x": {"field": "Country"},
-    "y": {"aggregate": "count", "field": "Status"},
-    "color": {"field": "Status"}
+    "x": {"field": "Country", "type": "nominal"},
+    "y": {"aggregate": "count", "field": "Status", "type": "quantitative"},
+    "color": {"field": "Status", "type": "nominal"},
+    "tooltip": [
+      {"field": "Country", "type": "nominal"},
+      {"field": "Status", "type": "nominal"},
+      {"aggregate":"count", "type": "quantitative"}
+    ]
   }
 }
