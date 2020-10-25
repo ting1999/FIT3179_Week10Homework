@@ -1,0 +1,13 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 800,
+  "height": 500,
+  "title": "Status of nuclear power plants",
+  "data": {"url": "https://raw.githubusercontent.com/ting1999/FIT3179_Week10Homework/main/data/nuclear_power_plants.json"},
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Country"},
+    "y": {"aggregate": "count", "field": "Status"},
+    "color": {"field": "Status"}
+  }
+}
