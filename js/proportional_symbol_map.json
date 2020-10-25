@@ -28,7 +28,7 @@
               "fields": ["Capacity"],
               "bind": "legend"
             }
-          }
+          },
           "mark": {"type": "circle"},
           "encoding": {
             "size": {
