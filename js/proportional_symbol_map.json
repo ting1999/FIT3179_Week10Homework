@@ -44,7 +44,7 @@
               "legend": {"format": ".1s"}
             },
             "opacity": {
-              "value": 0.2
+              "value": 0.6
             },
             "tooltip": [
                 {"field": "Name", "type": "nominal"},
