@@ -4,6 +4,32 @@
   "height": 500,
   "title": "Status of nuclear power plants",
   "data": {"url": "https://raw.githubusercontent.com/ting1999/FIT3179_Week10Homework/main/data/nuclear_power_plants.json"},
+  "params": [
+    {
+      "name": "Status_selection", 
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Operational",
+          "Planned",
+          "Shutdown",
+          "Under Construction"
+        ],
+        "labels": [
+          "Show All",
+          "Operational",
+          "Planned",
+          "Shutdown",
+          "Under Construction"
+        ],
+        "name": "Status Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "Status_selection == null || datum.Status == Status_selection"}
+  ],
   "mark": "bar",
   "encoding": {
     "x": {"field": "Country", "type": "nominal"},
