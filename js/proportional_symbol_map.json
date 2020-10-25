@@ -14,7 +14,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/ting1999/FIT3179_Week9Homework/main/data/nuclear_power_plants.json"
+        "url": "https://raw.githubusercontent.com/ting1999/FIT3179_Week10Homework/main/data/nuclear_power_plants.json"
       },
       "encoding": {
         "longitude": {"field": "Longitude", "type": "quantitative"},
@@ -22,13 +22,6 @@
       },
       "layer": [
         {
-          "selection": {
-            "capacity_highlight": {
-              "type": "multi",
-              "fields": ["Capacity"],
-              "bind": "legend"
-            }
-          },
           "mark": {"type": "circle"},
           "encoding": {
             "size": {
@@ -51,7 +44,6 @@
               "legend": {"format": ".1s"}
             },
             "opacity": {
-              "condition": {"selection": "capacity_highlight", "value": 0.6},
               "value": 0.2
             },
             "tooltip": [
