@@ -22,7 +22,7 @@
       },
       "layer": [
         {
-          "mark": {"type": "circle", "tooltip": {"content": "data"}},
+          "mark": {"type": "circle"},
           "encoding": {
             "size": {
               "field": "Capacity",
@@ -45,7 +45,12 @@
             },
             "opacity": {
               "value": 0.6
-            }
+            },
+            "tooltip": [
+                {"field": "Name", "type": "nominal"},
+                {"field": "Country", "type": "nominal"},
+                {"field": "Capacity", "type": "quantitative", "format": ","}
+              ]
           }
         }
       ]
