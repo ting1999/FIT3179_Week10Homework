@@ -34,7 +34,28 @@
   "encoding": {
     "x": {"field": "Country", "type": "nominal"},
     "y": {"aggregate": "count", "field": "Status", "type": "quantitative"},
-    "color": {"field": "Status", "type": "nominal"},
+    "color": {
+      "field": "Status", 
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Cancelled Construction",
+          "Operational",
+          "Planned",
+          "Shutdown",
+          "Suspended Construction",
+          "Under Construction"
+        ],
+        "range": [
+          "#984ea3",
+          "#1aa260",
+          "#a6cee3",
+          "#e41a1c",
+          "#a65628",
+          "#377eb8"
+        ]
+      }
+    },
     "tooltip": [
       {"field": "Country", "type": "nominal"},
       {"field": "Status", "type": "nominal"},
